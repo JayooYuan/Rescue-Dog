@@ -15,6 +15,14 @@ venv/
 /data/
 *.log
 
+# Python packaging / local test output
+build/
+dist/
+*.egg-info/
+.pytest_cache/
+.coverage
+coverage.xml
+
 # Large generated assets
 *.mp4
 *.zip

@@ -1,0 +1,28 @@
+# EXAMPLE ONLY: all actual measurements must be collected on the final robot.
+# Do NOT copy any numbers from manufacturer examples without verification.
+platform:
+  model: null
+  firmware: null
+  sdk_package: null
+  sdk_version: null
+motion:
+  supports_combined_xyyaw: null
+  x_norm_to_sdk: null
+  y_norm_to_sdk: null
+  yaw_norm_to_sdk: null
+  firmware_link_loss_stop_supported: null
+  stationary_feedback_supported: null
+vision:
+  camera_id: null
+  is_mirrored: null
+  camera_intrinsics: null
+  camera_to_body_extrinsics: null
+  sign_distance_reference: null
+  frame_max_age_ms_initial_trial: 200
+arm:
+  degrees_of_freedom: null
+  workspace_calibrated: false
+  safe_pose: null
+  presets: {}
+  supports_cancel: null
+  grip_success_feedback_supported: null

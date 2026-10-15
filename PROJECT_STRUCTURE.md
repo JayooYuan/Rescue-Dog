@@ -7,8 +7,17 @@
 
 ```text
 Dog/
+├── .github/                              GitHub Actions、PR 模板和问题模板
+├── CONTRIBUTING.md                       分支、PR、接口冻结和安全提交约定
 ├── PROJECT_CONTEXT.md                    项目背景、规则、平台、接口与资料索引
 ├── PROJECT_STRUCTURE.md                  本文档
+├── interfaces_v0.2.1/                    公共协议、Mock、B 组 FSM 和契约测试
+│   ├── rescue_contracts/                  冻结的跨模块数据结构与 Protocol
+│   ├── mocks/                             FakeClock、控制权、运动/机械臂/蜂鸣器 Mock
+│   ├── fsm.py                             自主流程协调器
+│   ├── examples/demo_fsm.py               无硬件完整流程演示
+│   ├── tests/                             协议与 FSM 测试
+│   └── config/calibration.example.yaml    待实机填写的能力/标定模板
 ├── 文档/
 │   ├── 四足机械狗紧急救援技术报告_设计与仿真版(1).docx
 │   ├── 四足机械狗紧急救援技术报告_设计与仿真版.pdf
@@ -44,11 +53,13 @@ Dog/
         └── 3.四足机械狗高级开发应用.docx
 ```
 
-目录树来自写入前的Remote文件检查。资料压缩包仅列出文件名，未展开其内部目录。本次新增的是两份Markdown文档，不移动现有文件。
+目录树中的原始资料仅作本地参考，仍由`.gitignore`排除；公共协议、Mock 和 CI
+配置位于`interfaces_v0.2.1/`，可直接由队员从 GitHub 克隆运行。
 
 ## 2. 后续源码的简单布局
 
-下面是后续代码归档建议，尚未创建这些目录和程序文件。背景文档与原始资料仍使用上面的现有位置。
+视觉算法、真实 SDK 适配和现场数据仍按队员分工逐步加入。当前公共协议和 B 组
+Mock 主控集中在`interfaces_v0.2.1/`，避免在实机接入前把未验证参数混入比赛程序。
 
 ```text
 Dog/
