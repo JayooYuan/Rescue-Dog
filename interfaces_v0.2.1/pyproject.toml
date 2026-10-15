@@ -1,0 +1,17 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "rescue-dog-contracts"
+version = "0.2.1"
+description = "Shared contracts, mocks, and autonomous FSM for the Rescue-Dog project"
+requires-python = ">=3.10"
+dependencies = []
+
+[tool.setuptools]
+packages = ["rescue_contracts", "mocks"]
+py-modules = ["fsm"]
+
+[tool.setuptools.exclude-package-data]
+"*" = ["*.py[cod]", "__pycache__/*"]
