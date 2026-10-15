@@ -1,0 +1,20 @@
+# Local competition reference materials (large files / team reports)
+/文档/
+/机械狗赛项资料/
+/归档压缩包/
+
+# Runtime artifacts / environments
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+.env
+.env.*
+.vscode/
+/logs/
+/data/
+*.log
+
+# Large generated assets
+*.mp4
+*.zip
