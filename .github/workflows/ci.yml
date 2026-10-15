@@ -31,3 +31,5 @@ jobs:
         run: |
           python -m examples.demo_mock
           python -m examples.demo_fsm
+
+# Contract tests live in the interfaces_v0.2.1 package.
